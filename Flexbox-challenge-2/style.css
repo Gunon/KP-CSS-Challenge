@@ -1,23 +1,16 @@
 /* 
 ////// For this challenge ///////
 
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
+- All text is in the text.md file
 
 // Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
 
-   */
+*/
 
 *,
 *::before,
@@ -31,12 +24,13 @@ body {
   font-size: 1.3rem;
 }
 
-h1 {
-  font-size: 3rem;
+img {
+  max-width: 100%;
 }
 
-h2 {
-  font-size: 36px;
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
 }
 
 .container {
@@ -46,21 +40,20 @@ h2 {
 }
 
 .row {
-  /* display: flex => flex container */
   display: flex;
+  justify-content: space-between;
+
   /* can't use yet */
   /* gap: 100px; */
-}
-
-.col + .col {
-  margin-left: 30px;
 }
 
 .col {
   /* these are now flex items */
   width: 100%;
-  text-align: center;
-  padding: 3em 0;
+}
+
+.col + .col {
+  margin-left: 30px;
 }
 
 .hero {
@@ -69,8 +62,23 @@ h2 {
   color: #fff;
 }
 
-.hero__text {
-  width: 60%;
+.hero__text,
+.bottom_hero_text {
+  width: 62%;
+}
+
+.hero__img,
+.bottom_section__right {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.bottom_section__right {
+  padding: 1em;
+  align-self: flex-start;
+  color: white;
+  background-color: #136c72;
+  text-align: center;
 }
 
 .hero p {
@@ -93,11 +101,12 @@ h2 {
   opacity: 0.75;
 }
 
-.bottom__hero {
-  color: white;
-  background-color: #136c72;
+.bottom_hero_text h2 {
+  color: #136c72;
 }
-
-.top__hero h2 {
-  color: #87629a;
+.bottom_hero_text {
+  color: #3a3a3a;
+}
+.bottom__section {
+  margin-top: 3em;
 }
