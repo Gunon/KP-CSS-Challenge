@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.text__container {
+  min-height: 660px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.top__text {
+  text-align: center;
+  align-items: center;
+}
+
+.top__text h1 {
+  color: #824936;
+  font-size: 60px;
+}
+
+.top__text p {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.hero {
+  background-color: #f3eed9;
+  padding: 100px 0;
+}
+
+.top__text--lorem {
+  display: flex;
+  justify-content: center;
+}
+
+.top__text--lorem p + p {
+  margin-left: 2em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row p {
+  font-size: 21px;
+  text-justify: auto;
+}
+
+.second__section {
+  padding: 2em 0;
+}
+
+.second__section--header {
+  color: #824936;
+  font-size: 36px;
+  text-align: center;
+}
+
+.left__row {
+  width: 48%;
+}
+
+.right__row {
+  width: 48%;
+}
+
+.third__section {
+  background-color: #222c2a;
+  padding: 2em 0;
+  color: #f3eed9;
+}
+
+.fourth__section {
+  background-color: #824936;
+  padding: 2em 0;
+  color: #f3eed9;
+}
+
+.hero__img {
+  width: 32%;
+  align-self: flex-start;
+}

@@ -74,16 +74,33 @@ header {
   padding: 1em 0;
 }
 
+.logo {
+  margin-right: 1em;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 
   display: flex;
+  font-size: 0.9rem;
 }
 
-.nav__item {
-  margin-right: 2em;
+.nav__list--primary {
+  margin: 0 auto;
+}
+
+.nav__item + .nav__item {
+  margin-left: 2em;
 }
 
 .nav__link {
